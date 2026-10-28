@@ -14,7 +14,7 @@ two CSV files you give it.
 ## What you need
 
 - Two reports exported from Google Ads for the last 30 days: the **Campaigns** report and the
-  **Search terms** report. The steps are in [references/how-to-export.md](references/how-to-export.md)
+  **Search terms** report. The steps are in [how-to-export.md](skills/home-services-google-ads-audit/references/how-to-export.md)
   and take about two minutes.
 - Answers to eight short questions the reports can't show (call tracking, location setting,
   landing page, call button, ad hours, reply speed, reviews, job value). "Not sure" is fine.
@@ -27,7 +27,7 @@ two CSV files you give it.
 [webnwell.com/free-google-ads-audit](https://webnwell.com/free-google-ads-audit/?utm_source=github&utm_medium=readme&utm_campaign=google-ads-audit),
 then open **Settings**, find **Skills**, and upload the zip.
 
-**Claude Code:** copy this folder to `~/.claude/skills/home-services-google-ads-audit/`.
+**Claude Code:** copy the `skills/home-services-google-ads-audit` folder into `~/.claude/skills/`.
 
 **Skills CLI:**
 
@@ -46,11 +46,11 @@ Then ask your assistant: *"Audit my Google Ads"* and attach the two reports.
 | C. Reach | 3 | Budget running out on the campaigns that bring the cheapest leads, ad rank, ads showing outside the service area |
 | D. Clicks into jobs | 5 | A page built for the service, a call button, ad hours, reply speed, reviews |
 
-Every check and how it is scored: [references/checks.md](references/checks.md).
+Every check and how it is scored: [checks.md](skills/home-services-google-ads-audit/references/checks.md).
 
 ## Example
 
-The report from the invented account in [examples/](examples/) starts like this:
+The report from the invented account in [examples/](skills/home-services-google-ads-audit/examples/) starts like this:
 
 > **Google Ads audit: 38/100, Big leaks**
 >
@@ -63,6 +63,7 @@ The report from the invented account in [examples/](examples/) starts like this:
 You can run the scorer on its own:
 
 ```
+cd skills/home-services-google-ads-audit
 python3 scripts/score.py --campaigns examples/campaigns.csv \
   --search-terms examples/search_terms.csv --answers examples/answers.json
 ```
