@@ -1,0 +1,9 @@
+Campaign report
+"September 29, 2026 - October 28, 2026"
+Campaign,Campaign status,Campaign type,Bid strategy type,Currency code,Budget,Clicks,Impr.,Cost,Conversions,Search lost IS (budget),Search lost IS (rank)
+Foundation Repair - Search,Enabled,Search,Maximize conversions,USD,80.00,"1,012","14,880","2,890.40",31.00,22.15%,31.40%
+Basement Waterproofing - Search,Enabled,Search,Maximize clicks,USD,40.00,418,"7,302","1,104.85",9.00,8.02%,48.77%
+Crawl Space - Search,Enabled,Search,Maximize conversions,USD,25.00,96,"2,210",402.12,2.00,< 10%,61.30%
+Brand Awareness - PMax,Enabled,Performance Max,Maximize conversions,USD,30.00,"1,288","96,410",861.33,0.00,--,--
+Old Spring Promo,Paused,Search,Manual CPC,USD,20.00,0,0,0.00,0.00,--,--
+Total: Account,,,,,,"2,814","120,802","5,258.70",42.00,,
